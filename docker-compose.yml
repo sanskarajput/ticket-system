@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      DB_PATH: /app/database/tickets.db
+    volumes:
+      - sqlite_data:/app/database
+
+volumes:
+  sqlite_data:
