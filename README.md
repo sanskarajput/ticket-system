@@ -18,17 +18,11 @@ go run ./cmd/main.go
 ## Docker Run
 
 ```bash
-# First run or after Dockerfile changes
+docker build -t ticket-system .
+docker run -p 8080:8080 ticket-system
+
+# or just
 docker compose up --build
-
-# Stop
-Ctrl + C
-
-# Start again (no rebuild)
-docker compose up
-
-# Remove everything including the SQLite database
-docker compose down -v
 ```
 
 Health check:
