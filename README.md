@@ -83,5 +83,10 @@ PATCH  /tickets/{id}/status  Update ticket status
 
 **Status flow:** `open` → `in_progress` → `closed` (one-way, no reversal)
 
+#### Deployment links
+
+Deployed at : [https://sanskarajput-s-ticket-system.onrender.com](https://sanskarajput-s-ticket-system.onrender.com)
+
+Health check : [https://sanskarajput-s-ticket-system.onrender.com/health](https://sanskarajput-s-ticket-system.onrender.com/health)
 
 ---
